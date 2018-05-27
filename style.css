@@ -42,6 +42,7 @@ a {
 	border:1px solid #CCC;
 	background-image: url('cabinet.png');
 	background-size: cover;
+	background-position: center;
 	position:relative;
 	float:left;
 	padding: 5px 5px 5px 5px;
@@ -161,5 +162,21 @@ a {
 #previewContainer {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.productContainer {
+		width: 100%;
+	}
+
+	h1 {
+		width: 100%;
+		text-align: center;
+	}
+
 }
 
