@@ -1,0 +1,165 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+button {
+	height: 2rem;
+}
+
+a {
+	color: black;
+}
+
+.top {
+	z-index: 2;
+	position: relative
+}
+
+.bottom {
+	z-index: 1; 
+	position: relative
+}
+
+.drag {
+    width:100px;
+    height:100px;
+    position:relative;
+	background-size:contain !important;
+	background-repeat:no-repeat;
+	float:left;
+	margin-left:10px;
+	margin-top:30px;
+	border:solid 1px #CCC;
+}
+
+.drag:hover {
+	opacity: 0.6;
+}
+
+#droppable {
+	width:720px;
+	height :820px;
+	border:1px solid #CCC;
+	background-image: url('cabinet.png');
+	background-size: cover;
+	position:relative;
+	float:left;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+}
+	
+	
+#droppable .drag{
+	width:200px;
+	height :220px;
+	background-size:200px;
+	border:none;
+}
+
+#droppable .drag img{
+	width:100%;
+	height:100%;
+	z-index:0;
+}	
+
+.ui-resizable-handle {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.ui-resizable-n{
+	top: -10px;
+	left:50%;
+	width: 6px;
+	height: 6px;
+}
+
+.ui-resizable-e {
+	right:-10px;
+	top:50%;   
+	width: 6px;
+    height: 6px; 
+}
+
+.ui-resizable-s {
+	bottom: -10px;
+	left: 50%;
+	width:6px;
+	height: 6px;
+}
+
+.ui-resizable-w {
+	left:-10px;
+	top:50%;
+	width: 6px;
+	height: 6px;
+}
+
+.ui-resizable-nw {
+	left: -10px;
+	top: -10px;    
+	width: 6px;
+	height: 6px;
+}
+
+.ui-resizable-ne {
+	top: -10px;
+	right: -10px; 
+	width: 6px;
+	height: 6px;
+}
+
+.ui-resizable-sw {
+	bottom: -10px;
+	left: -10px;
+	width: 6px;
+	height: 6px;
+}
+
+.ui-resizable-se {
+	bottom: -10px;
+	right: -10px;
+	width: 6px;
+	height: 6px;
+}
+
+.ui-resizable-helper { 
+	border: 1px dotted #CCC;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
+.product {
+	height: 6rem;
+	width: 45%;
+	background-size: cover;
+	background-position: center;
+}
+
+.productContainer {
+	display: flex;
+	width: 30%;
+	border: 1px solid #666;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.productInfo {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem;
+}
+
+.productInfo span {
+	width: 100%;
+}
+
+#previewContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
